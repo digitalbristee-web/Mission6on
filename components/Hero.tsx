@@ -2,89 +2,46 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white px-5 pb-14 pt-6 sm:pb-20 lg:pb-24">
-      <div className="mx-auto max-w-6xl">
-        <header className="mb-14 flex items-center justify-between">
+    <section className="relative overflow-hidden bg-white px-5 pb-16 pt-6 sm:pb-24">
+      <div className="absolute inset-x-0 top-0 h-72 bg-[linear-gradient(180deg,#eaf3fb_0%,#ffffff_100%)]" />
+      <div className="relative mx-auto max-w-5xl">
+        <header className="flex items-center justify-center py-4">
           <Image
-            src="/bristee-logo.png"
-            alt="Bristee Meta Ads Expert"
-            width={228}
-            height={92}
+            src="/consultant-logo.png"
+            alt="Digital Marketing Consultation"
+            width={260}
+            height={120}
             priority
-            className="h-auto w-40 sm:w-52"
+            className="h-auto w-48 sm:w-64"
           />
-          <a
-            href="#consultation-form"
-            className="focus-ring hidden min-h-11 items-center justify-center rounded-md bg-[#1f5fa8] px-5 text-sm font-bold text-white shadow-sm transition hover:bg-[#143f79] sm:inline-flex"
-          >
-            Book The Call
-          </a>
         </header>
 
-        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div>
-            <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#2b986f]">
-              Free 1:1 Consultation
-            </p>
-            <h1 className="max-w-4xl text-4xl font-bold leading-[1.08] text-[#0c1728] sm:text-5xl lg:text-6xl">
-              Get More Customers, More Sales, and Predictable Business Growth
-            </h1>
-            <p className="mt-6 max-w-2xl text-xl leading-8 text-[#43566d]">
-              Stop relying on referrals and random marketing.
-            </p>
-            <p className="mt-4 max-w-2xl text-lg leading-8 text-[#4c5e75]">
-              Book a free 1:1 consultation and get a customized digital
-              marketing strategy designed specifically for your business.
-            </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#consultation-form"
-                className="focus-ring inline-flex min-h-14 items-center justify-center rounded-md bg-[#1f5fa8] px-7 text-base font-bold text-white shadow-sm transition hover:bg-[#143f79]"
-              >
-                Book Your Free Consultation
-              </a>
-              <a
-                href="#benefits"
-                className="focus-ring inline-flex min-h-14 items-center justify-center rounded-md border border-[#bfd0e5] bg-white px-7 text-base font-bold text-[#143f79] transition hover:border-[#2b986f]"
-              >
-                Get Your Customized Marketing Strategy
-              </a>
-            </div>
-          </div>
-
-          <div className="rounded-md border border-[#d9e5f2] bg-[#f8fbff] p-6 shadow-sm">
-            <div className="border-b border-[#d9e5f2] pb-5">
-              <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#2b986f]">
-                Book Free Consultation
-              </p>
-              <h2 className="mt-3 text-2xl font-bold text-[#0c1728]">
-                Customized Strategy For Your Business
-              </h2>
-            </div>
-            <div className="grid gap-4 py-6">
-              {["Book your free consultation.", "We discuss your business, goals, and current challenges.", "Receive a customized digital marketing strategy for your business."].map(
-                (step, index) => (
-                  <div key={step} className="flex gap-4">
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#2b986f] text-sm font-bold text-white">
-                      {index + 1}
-                    </span>
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#1f5fa8]">
-                        Step {index + 1}
-                      </p>
-                      <p className="mt-1 leading-7 text-[#43566d]">{step}</p>
-                    </div>
-                  </div>
-                )
-              )}
-            </div>
+        <div className="mx-auto mt-10 max-w-4xl text-center sm:mt-14">
+          <p className="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-[#446987]">
+            For Nepal-based business owners
+          </p>
+          <h1 className="text-4xl font-bold leading-[1.08] text-[#071423] sm:text-5xl lg:text-6xl">
+            Struggling to grow your business?
+          </h1>
+          <p className="mx-auto mt-5 max-w-3xl text-xl font-bold leading-8 text-[#123a62] sm:text-2xl">
+            Grab a FREE 1:1 Digital Marketing consultation call with me
+          </p>
+          <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-[#4d6175]">
+            In this consultation call, I'll diagnose your business and provide a
+            customized Digital Marketing plan that you can immediately implement
+            in your business after the call.
+          </p>
+          <div className="mt-9 flex justify-center">
             <a
               href="#consultation-form"
-              className="focus-ring inline-flex min-h-12 w-full items-center justify-center rounded-md bg-[#1f5fa8] px-5 text-base font-bold text-white transition hover:bg-[#143f79]"
+              className="focus-ring inline-flex min-h-14 items-center justify-center rounded-md bg-[#123a62] px-8 text-base font-bold text-white shadow-lg shadow-[#123a62]/20 transition hover:bg-[#081c32]"
             >
-              Book Free Consultation
+              Book your FREE call now
             </a>
           </div>
+          <p className="mt-5 text-sm font-semibold text-[#6d8399]">
+            No pressure. Just clear advice for your business.
+          </p>
         </div>
       </div>
     </section>

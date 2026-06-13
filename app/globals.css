@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fbff;
-  --foreground: #132033;
-  --brand-blue: #1f5fa8;
-  --brand-blue-dark: #143f79;
-  --brand-green: #2b986f;
-  --brand-ink: #0c1728;
+  --background: #f7faff;
+  --foreground: #0f1c2e;
+  --brand-blue: #123a62;
+  --brand-blue-dark: #081c32;
+  --brand-blue-soft: #e9f2fb;
+  --brand-silver: #6d8399;
+  --brand-ink: #071423;
 }
 
 * {
@@ -31,7 +32,7 @@ textarea {
 }
 
 ::selection {
-  background: rgba(43, 152, 111, 0.22);
+  background: rgba(18, 58, 98, 0.18);
 }
 
 .focus-ring {
@@ -40,5 +41,146 @@ textarea {
 }
 
 .focus-ring:focus-visible {
-  outline-color: var(--brand-green);
+  outline-color: var(--brand-blue);
+}
+
+.flodesk-shell {
+  overflow: hidden;
+  border: 1px solid #dbe6f1;
+  border-radius: 6px;
+  background: #f7faff;
+  box-shadow: 0 18px 45px rgba(18, 58, 98, 0.1);
+}
+
+.flodesk-shell [data-ff-el="root"].ff-6a2a3d99796e542975477742 {
+  width: 100%;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__container {
+  max-width: none;
+  background: transparent;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__form {
+  padding: 28px;
+  color: #15263a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__title {
+  margin-bottom: 10px;
+  color: #071423;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 1.12;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__subtitle {
+  margin-bottom: 24px;
+  color: #4d6175;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__field {
+  margin-bottom: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__control {
+  height: 52px;
+  border: 1px solid #c9d8e7;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #15263a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__control:focus {
+  border-color: #123a62;
+  box-shadow: 0 0 0 3px rgba(18, 58, 98, 0.12);
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__label {
+  color: #8196aa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__button {
+  min-height: 56px;
+  border: 1px solid #123a62;
+  border-radius: 6px;
+  background: #123a62;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 14px 26px rgba(18, 58, 98, 0.18);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__button:hover {
+  background: #081c32;
+  transform: translateY(-1px);
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__button
+  [data-draw-element="editable"] {
+  font-size: 0;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__button
+  [data-draw-element="editable"]::before {
+  content: "Submit & Book My Free Call";
+  font-size: 16px;
+}
+
+.flodesk-shell
+  [data-ff-el="root"].ff-6a2a3d99796e542975477742
+  .ff-6a2a3d99796e542975477742__success-message {
+  color: #123a62;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .flodesk-shell
+    [data-ff-el="root"].ff-6a2a3d99796e542975477742
+    .ff-6a2a3d99796e542975477742__form {
+    padding: 22px;
+  }
+
+  .flodesk-shell
+    [data-ff-el="root"].ff-6a2a3d99796e542975477742
+    .ff-6a2a3d99796e542975477742__title {
+    font-size: 24px;
+  }
 }

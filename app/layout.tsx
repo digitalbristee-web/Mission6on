@@ -5,23 +5,23 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://bristee-consultation.vercel.app"),
   title: {
-    default: "Free 1:1 Digital Marketing Consultation | Bristee",
+    default: "Free 1:1 Digital Marketing Consultation | Digital Marketing Consultation",
     template: "%s | Bristee",
   },
   description:
-    "Book a free 1:1 consultation and get a customized digital marketing strategy designed specifically for your business.",
+    "Book a free 1:1 digital marketing consultation call and get a customized plan for your Nepal-based business.",
   openGraph: {
-    title: "Get More Customers, More Sales, and Predictable Business Growth",
+    title: "Struggling to grow your business?",
     description:
-      "Book a free 1:1 consultation and get a customized digital marketing strategy designed specifically for your business.",
+      "Grab a FREE 1:1 Digital Marketing consultation call and get a customized plan you can implement immediately.",
     url: "/",
-    siteName: "Bristee Meta Ads Expert",
+    siteName: "Digital Marketing Consultation",
     images: [
       {
-        url: "/bristee-logo.png",
+        url: "/consultant-logo.png",
         width: 512,
         height: 512,
-        alt: "Bristee Meta Ads Expert logo",
+        alt: "Digital Marketing Consultation logo",
       },
     ],
     locale: "en_US",
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free 1:1 Digital Marketing Consultation | Bristee",
+    title: "Free 1:1 Digital Marketing Consultation",
     description:
-      "Get a customized digital marketing strategy designed specifically for your business.",
-    images: ["/bristee-logo.png"],
+      "Get a customized digital marketing plan for your business.",
+    images: ["/consultant-logo.png"],
   },
 };
 
@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <Script id="meta-pixel" strategy="afterInteractive">
           {`

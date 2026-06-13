@@ -1,15 +1,16 @@
 import Benefits from "@/components/Benefits";
 import CTAForm from "@/components/CTAForm";
+import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Urgency from "@/components/Urgency";
 
-const benefits = [
-  "Discover what's holding back your growth",
-  "Learn how to generate more qualified leads",
-  "Get a clear customer acquisition plan",
-  "Understand which marketing channels fit your business",
-  "Leave with a customized strategy you can follow",
+const steps = [
+  "Fill up the form",
+  "Receive an email with the appointment link",
+  "Fill the appointment form",
+  "Join the 1:1 consultation call",
+  "Get your customized digital marketing plan for FREE",
 ];
 
 export default function LandingPage() {
@@ -17,7 +18,8 @@ export default function LandingPage() {
     <main>
       <Hero />
       <Problem />
-      <Benefits benefits={benefits} />
+      <Benefits steps={steps} />
+      <FAQ />
       <Urgency />
       <CTAForm />
     </main>
