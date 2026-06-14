@@ -7,13 +7,13 @@ export const metadata = {
     "Watch the next-step video before your free digital marketing consultation.",
 };
 
-const vimeoUrl = "";
+const thankYouVideoUrl = "/thank-you-page-video.mp4";
 const whatsappUrl = "";
 
 export default function ThanksPage() {
   return (
     <main className="min-h-screen bg-[#f7faff] px-5 py-8 text-[#0f1c2e]">
-      <section className="mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-4xl flex-col items-center justify-center text-center">
+      <section className="mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-5xl flex-col items-center justify-center text-center">
         <Image
           src="/consultant-logo.png"
           alt="Digital Marketing Consultation"
@@ -22,6 +22,9 @@ export default function ThanksPage() {
           priority
           className="mb-8 h-auto w-48 sm:w-64"
         />
+        <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-[#446987]">
+          Thank you
+        </p>
         <h1 className="max-w-3xl text-4xl font-bold leading-tight text-[#071423] sm:text-5xl">
           Wait... watch the video before you go
         </h1>
@@ -31,21 +34,15 @@ export default function ThanksPage() {
         </p>
 
         <div className="mt-10 w-full overflow-hidden rounded-md border border-[#dbe6f1] bg-white p-3 shadow-sm">
-          {vimeoUrl ? (
-            <iframe
-              src={vimeoUrl}
-              title="Consultation next steps video"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              className="aspect-video w-full rounded-md"
-            />
-          ) : (
-            <div className="flex aspect-video w-full items-center justify-center rounded-md bg-[#e9f2fb] px-6 text-center">
-              <p className="max-w-md text-base font-bold leading-7 text-[#123a62]">
-                Vimeo video will be added here after you provide the link.
-              </p>
-            </div>
-          )}
+          <div className="aspect-video w-full overflow-hidden rounded-md bg-[#081c32]">
+          <video
+            src={thankYouVideoUrl}
+            controls
+            preload="metadata"
+            playsInline
+            className="h-full w-full object-contain"
+          />
+          </div>
         </div>
 
         {whatsappUrl ? (
