@@ -7,8 +7,8 @@ export const metadata = {
     "Watch the next-step video before your free digital marketing consultation.",
 };
 
-const thankYouVideoUrl = "/thank-you-page-video.mp4";
-const whatsappUrl = "";
+const thankYouVideoUrl = "/original-thank-you-video.mp4";
+const whatsappUrl = "https://wa.me/";
 
 export default function ThanksPage() {
   return (
@@ -35,33 +35,32 @@ export default function ThanksPage() {
 
         <div className="mt-10 w-full overflow-hidden rounded-md border border-[#dbe6f1] bg-white p-3 shadow-sm">
           <div className="aspect-video w-full overflow-hidden rounded-md bg-[#081c32]">
-          <video
-            src={thankYouVideoUrl}
-            controls
-            preload="metadata"
-            playsInline
-            className="h-full w-full object-contain"
-          />
+            <video
+              src={thankYouVideoUrl}
+              controls
+              preload="metadata"
+              playsInline
+              className="h-full w-full object-contain"
+            />
           </div>
         </div>
 
-        {whatsappUrl ? (
+        <div className="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:flex-row">
+          <Link
+            href="/"
+            className="focus-ring inline-flex min-h-14 items-center justify-center rounded-md border border-[#c9d8e7] bg-white px-8 text-base font-bold text-[#123a62] shadow-sm transition hover:border-[#123a62]"
+          >
+            Back to consultation page
+          </Link>
           <a
             href={whatsappUrl}
             target="_blank"
             rel="noreferrer"
-            className="focus-ring mt-8 inline-flex min-h-14 items-center justify-center rounded-md bg-[#123a62] px-8 text-base font-bold text-white shadow-lg shadow-[#123a62]/20 transition hover:bg-[#081c32]"
+            className="focus-ring inline-flex min-h-14 items-center justify-center rounded-md bg-[#123a62] px-8 text-base font-bold text-white shadow-lg shadow-[#123a62]/20 transition hover:bg-[#081c32]"
           >
             Chat with me on WhatsApp
           </a>
-        ) : (
-          <Link
-            href="/"
-            className="focus-ring mt-8 inline-flex min-h-14 items-center justify-center rounded-md bg-[#123a62] px-8 text-base font-bold text-white shadow-lg shadow-[#123a62]/20 transition hover:bg-[#081c32]"
-          >
-            Back to consultation page
-          </Link>
-        )}
+        </div>
       </section>
     </main>
   );
